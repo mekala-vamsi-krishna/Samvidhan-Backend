@@ -31,7 +31,7 @@ private func jsonResponse(
 ) throws -> Response {
 
     let path = req.application.directory.publicDirectory
-        + "data/\(filename)"
+        + "Data/\(filename)"
 
     let data = try Data(
         contentsOf: URL(fileURLWithPath: path)
